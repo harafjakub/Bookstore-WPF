@@ -1,0 +1,29 @@
+﻿<Window x:Class="Bookstore.ClientsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+         Title="Clients" Height="450" Width="800" ResizeMode="CanMinimize" Activated="Window_Activated">
+    <Canvas>
+        <Label FontSize="30" FontFamily="Arial Black" FontWeight="Bold" Canvas.Left="335" Canvas.Top="18">CLIENTS</Label>
+        <DataGrid x:Name="dataGrid" Width="750" Height="246" Canvas.Left="25" Canvas.Top="83" AutoGenerateColumns="False" ItemsSource="{Binding}" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=ClientID}" Header="Client ID" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Name" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Surname}" Header="Surname" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=DateOfBirth}" Header="Date of birth" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Gender}" Header="Gender" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=PhoneNumber}" Header="Phone number" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Email}" Header="E-mail" Width="auto"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Width="130" Height="30" Canvas.Left="25" Canvas.Top="334" Click="Add_Click" FontFamily="Arial Black">ADD</Button>
+        <Button Width="130" Height="30" Canvas.Left="160" Canvas.Top="334" Click="Update_Click" FontFamily="Arial Black" HorizontalAlignment="Left" VerticalAlignment="Center">UPDATE</Button>
+        <Button Width="130" Height="30" Canvas.Left="295" Canvas.Top="334" Click="Delete_Click" FontFamily="Arial Black" HorizontalAlignment="Left" VerticalAlignment="Center">DELETE</Button>
+        <Button Width="130" Height="30" Canvas.Left="430" Canvas.Top="334" Click="Refresh_Click" FontFamily="Arial Black" HorizontalAlignment="Left" VerticalAlignment="Center">REFRESH</Button>
+        <Button Width="130" Height="30" Canvas.Left="645" Canvas.Top="334" Click="Exit_Click" FontFamily="Arial Black" HorizontalAlignment="Left" VerticalAlignment="Center">EXIT</Button>
+    </Canvas>
+</Window>

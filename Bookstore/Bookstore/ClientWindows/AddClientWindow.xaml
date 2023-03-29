@@ -1,0 +1,27 @@
+﻿<Window x:Class="Bookstore.AddClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Add Client" Height="400" Width="350" ResizeMode="CanMinimize">
+    <Canvas>
+        <Label FontSize="20" FontFamily="Arial Black" FontWeight="Bold" Canvas.Left="102" Canvas.Top="25">ADD CLIENT</Label>
+        <Label Canvas.Left="96" Canvas.Top="79">Name:</Label>
+        <Label Canvas.Left="80" Canvas.Top="109">Surname:</Label>
+        <Label Canvas.Left="60" Canvas.Top="138">Date of birth:</Label>
+        <Label Canvas.Left="88" Canvas.Top="169">Gender:</Label>
+        <Label Canvas.Left="49" Canvas.Top="200">Phone number:</Label>
+        <Label Canvas.Left="94" Canvas.Top="229">E-mail:</Label>
+        <TextBox x:Name="Name" Width="130" Height="25" Canvas.Left="145" Canvas.Top="79"/>
+        <TextBox x:Name="Surname" Width="130" Height="25" Canvas.Left="145" Canvas.Top="109"/>
+        <DatePicker x:Name="DateOfBirth" Width="130" Height="25" Canvas.Left="145" Canvas.Top="139"/>
+        <TextBox x:Name="Gender" Width="130" Height="25" Canvas.Left="145" Canvas.Top="169"/>
+        <TextBox x:Name="PhoneNumber" Width="130" Height="25" Canvas.Left="146" Canvas.Top="199"/>
+        <TextBox x:Name="Email" Width="130" Height="25" Canvas.Left="146" Canvas.Top="229"/>
+        <Button Width="150" Height="30" Canvas.Left="102" Canvas.Top="274" Click="Add_Click" FontFamily="Arial Black">ADD</Button>
+        <Button Width="150" Height="30" Canvas.Left="102" Canvas.Top="309" Click="Exit_Click" FontFamily="Arial Black">EXIT</Button>
+    </Canvas>
+</Window>

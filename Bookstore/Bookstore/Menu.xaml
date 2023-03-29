@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bookstore.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Menu" Height="450" Width="400">
+    <Canvas>
+        <Label FontSize="40" FontFamily="Arial Black" FontWeight="Bold" Canvas.Left="55" Canvas.Top="32">BOOKSTORE</Label>
+        <Label x:Name="infoLabel" Canvas.Left="91" Canvas.Top="78" HorizontalAlignment="Center" VerticalAlignment="Top"></Label>
+        <Button x:Name="BooksButton" Width="150" Height="30" Canvas.Left="125" Canvas.Top="121" Click="Books_Click" FontFamily="Arial Black">BOOKS</Button>
+        <Button x:Name="GamesButton" Width="150" Height="30" Canvas.Left="125" Canvas.Top="156" Click="Games_Click" FontFamily="Arial Black">GAMES</Button>
+        <Button x:Name="ProductsButton" Width="150" Height="30" Canvas.Left="125" Canvas.Top="226" Click="Products_Click" FontFamily="Arial Black">PRODUCTS</Button>
+        <Button x:Name="OrdersButton" Width="150" Height="30" Canvas.Left="125" Canvas.Top="191" Click="Orders_Click" FontFamily="Arial Black">ORDERS</Button>
+        <Button x:Name="ClientsButton" Width="150" Height="30" Canvas.Left="125" Canvas.Top="261" Click="Clients_Click" FontFamily="Arial Black">CLIENTS</Button>
+        <Button Width="150" Height="30" Canvas.Left="125" Canvas.Top="312" Click="Exit_Click" FontFamily="Arial Black">EXIT</Button>
+        <Label FontWeight="Light" FontSize="8" Canvas.Left="162" Canvas.Top="388">Author: Jakub Haraf</Label>
+    </Canvas>
+</Window>

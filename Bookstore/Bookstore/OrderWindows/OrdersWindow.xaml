@@ -1,0 +1,28 @@
+﻿<Window x:Class="Bookstore.OrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Orders" Height="450" Width="800" ResizeMode="CanMinimize" Activated="Window_Activated">
+    <Canvas>
+        <Label FontSize="30" FontFamily="Arial Black" FontWeight="Bold" Canvas.Left="326" Canvas.Top="21">ORDERS</Label>
+        <DataGrid x:Name="dataGrid" Width="750" Height="246" Canvas.Left="25" Canvas.Top="83" AutoGenerateColumns="False" ItemsSource="{Binding}" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=OrderID}" Header="Order ID" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=ClientID}" Header="Client ID" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=ProductID}" Header="Product ID" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=OrderDate}" Header="Order date" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=DeliveryDate}" Header="Delivery date" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Path=Status}" Header="Status" Width="auto"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Width="130" Height="30" Canvas.Left="25" Canvas.Top="334" Click="Add_Click" FontFamily="Arial Black">ADD</Button>
+        <Button Width="130" Height="30" Canvas.Left="160" Canvas.Top="334" Click="Update_Click" FontFamily="Arial Black">UPDATE</Button>
+        <Button Width="130" Height="30" Canvas.Left="295" Canvas.Top="334" Click="Delete_Click" FontFamily="Arial Black">DELETE</Button>
+        <Button Width="130" Height="30" Canvas.Left="430" Canvas.Top="334" Click="Refresh_Click" FontFamily="Arial Black">REFRESH</Button>
+        <Button Width="130" Height="30" Canvas.Left="645" Canvas.Top="334" Click="Exit_Click" FontFamily="Arial Black">EXIT</Button>
+    </Canvas>
+</Window>

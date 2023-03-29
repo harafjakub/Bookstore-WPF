@@ -1,0 +1,41 @@
+﻿<Window x:Class="Bookstore.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bookstore"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Add Book" Height="470" Width="550" ResizeMode="CanMinimize">
+    <Canvas>
+        <Label FontSize="20" FontFamily="Arial Black" FontWeight="Bold" Canvas.Left="199" Canvas.Top="33" HorizontalAlignment="Left" VerticalAlignment="Top">ADD BOOK</Label>
+        <Label Canvas.Left="82" Canvas.Top="102" HorizontalAlignment="Left" VerticalAlignment="Top">Title:</Label>
+        <Label Canvas.Left="68" Canvas.Top="133" HorizontalAlignment="Left" VerticalAlignment="Top">Author:</Label>
+        <Label Canvas.Left="56" Canvas.Top="164" HorizontalAlignment="Left" VerticalAlignment="Top">Publisher:</Label>
+        <Label Canvas.Left="73" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Top">Genre:</Label>
+        <Label Canvas.Left="38" Canvas.Top="222" HorizontalAlignment="Left" VerticalAlignment="Top">Release date:</Label>
+        <Label Canvas.Left="42" Canvas.Top="253" HorizontalAlignment="Left" VerticalAlignment="Top">Added date:</Label>
+        <Label Canvas.Left="78" Canvas.Top="283" HorizontalAlignment="Left" VerticalAlignment="Top">Price:</Label>
+        <Label Canvas.Left="324" Canvas.Top="104" HorizontalAlignment="Left" VerticalAlignment="Top">Rating:</Label>
+        <Label Canvas.Left="282" Canvas.Top="133" HorizontalAlignment="Left" VerticalAlignment="Top">Sold quantity:</Label>
+        <TextBox x:Name="Title" Width="130" Height="25" Canvas.Left="117" Canvas.Top="102" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="Author" Width="130" Height="25" Canvas.Left="117" Canvas.Top="132" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="Publisher" Width="130" Height="25" Canvas.Left="117" Canvas.Top="162" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="Genre" Width="130" Height="25" Canvas.Left="117" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DatePicker x:Name="ReleaseDate" Width="130" Height="25" Canvas.Left="117" Canvas.Top="222" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DatePicker x:Name="AddedDate" Width="130" Height="25" Canvas.Left="117" Canvas.Top="252" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="Price" Width="130" Height="25" Canvas.Left="117" Canvas.Top="282" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="Rating" Width="130" Height="25" Canvas.Left="371" Canvas.Top="104" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="SoldQuantity" PreviewTextInput="NumberValidationTextBox" Width="130" Height="25" Canvas.Left="371" Canvas.Top="134" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Canvas.Left="322" Canvas.Top="163" HorizontalAlignment="Left" VerticalAlignment="Top">Pages:</Label>
+        <Label Canvas.Left="256" Canvas.Top="194" HorizontalAlignment="Left" VerticalAlignment="Top">Original Language:</Label>
+        <Label Canvas.Left="258" Canvas.Top="225" HorizontalAlignment="Left" VerticalAlignment="Top">Release Language:</Label>
+        <Label Canvas.Left="328" Canvas.Top="253" HorizontalAlignment="Left" VerticalAlignment="Top">ISBN:</Label>
+        <TextBox x:Name="Pages" PreviewTextInput="NumberValidationTextBox" Width="130" Height="25" Canvas.Left="371" Canvas.Top="164" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="OriginalLanguage" Width="130" Height="25" Canvas.Left="371" Canvas.Top="194" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="ReleaseLanguage" Width="130" Height="25" Canvas.Left="371" Canvas.Top="224" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="ISBN" PreviewTextInput="NumberValidationTextBox" Width="130" Height="25" Canvas.Left="371" Canvas.Top="254" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Width="150" Height="30" Canvas.Left="188" Canvas.Top="345" Click="Add_Click" FontFamily="Arial Black" HorizontalAlignment="Left" VerticalAlignment="Top">ADD</Button>
+        <Button Width="150" Height="30" Canvas.Left="188" Canvas.Top="380" Click="Exit_Click" FontFamily="Arial Black" HorizontalAlignment="Left" VerticalAlignment="Top">EXIT</Button>
+    </Canvas>
+</Window>
